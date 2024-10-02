@@ -36,6 +36,7 @@
     <Compile Include="app2\migrations\__init__.py" />
     <Compile Include="app2\models.py" />
     <Compile Include="app2\tests.py" />
+    <Compile Include="app2\urls.py" />
     <Compile Include="app2\views.py" />
     <Compile Include="app2\__init__.py" />
     <Compile Include="app3\admin.py" />
@@ -1408,7 +1409,10 @@
     <Folder Include="app1\migrations\" />
     <Folder Include="app1\static\" />
     <Folder Include="app1\static\app1\" />
-    <Folder Include="static\" />
+    <Folder Include="app2\static\" />
+    <Folder Include="app2\static\app2\" />
+    <Folder Include="app2\templates\" />
+    <Folder Include="greet\static\" />
     <Folder Include="app1\templates\" />
     <Folder Include="greet\templates\" />
     <Folder Include="app2\" />
@@ -1418,7 +1422,7 @@
     <Folder Include="django1\" />
     <Folder Include="greet\" />
     <Folder Include="greet\migrations\" />
-    <Folder Include="static\greet\" />
+    <Folder Include="greet\static\greet\" />
     <Folder Include="venv\" />
     <Folder Include="venv\Include\" />
     <Folder Include="venv\Lib\" />
@@ -4247,8 +4251,15 @@
     <Content Include="app1\templates\do3_app1.html" />
     <Content Include="app1\templates\do1_app1.html" />
     <Content Include="app1\templates\index_app1.html" />
+    <Content Include="app2\static\app2\cat.jpg" />
+    <Content Include="app2\static\app2\dog.jpg" />
+    <Content Include="app2\static\app2\kiwi.jpg" />
+    <Content Include="app2\templates\do1_app2.html" />
+    <Content Include="app2\templates\do2_app2.html" />
+    <Content Include="app2\templates\do3_app2.html" />
+    <Content Include="app2\templates\index_app2.html" />
     <Content Include="greet\templates\index.html" />
-    <Content Include="static\greet\background.jpg" />
+    <Content Include="greet\static\greet\background.jpg" />
     <Content Include="venv\Lib\site-packages\asgiref-3.8.1.dist-info\INSTALLER" />
     <Content Include="venv\Lib\site-packages\asgiref-3.8.1.dist-info\LICENSE" />
     <Content Include="venv\Lib\site-packages\asgiref-3.8.1.dist-info\METADATA" />

@@ -16,43 +16,61 @@
             height: 100vh;
             margin: 0;
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
+
         .container {
             display: flex;
-            height: 100vh; 
+            height: 100vh;
         }
 
+
         .side-text {
-            width: 30%; 
+            width: 30%;
             background-color: #f0f0f0;
             padding: 20px;
             word-spacing: 20px;
             letter-spacing: 2px;
-         
         }
 
         .main-content {
-            width: 70%; 
+            width: 70%;
             color: darkred;
             padding: 20px;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        a {
+            color: navy;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="side-text">
-            <a href="{% url 'app1_1' %}">МАССИВНЫЙ СЕПТИ</a>
-            <p></p>
-            <a href="{% url 'app1_2' %}">МЯСО С БРУЛЯМИ</a>
-            <p></p>
-            <a href="{% url 'app1_3' %}">45,7 KB</a>
+            <div class="link-container">
+                <a href="{% url 'app1_1' %}">МАССИВНЫЙ СЕПТИ</a>
+                <p></p>
+                <a href="{% url 'app1_2' %}">МЯСО С БРУЛЯМИ</a>
+                <p></p>
+                <a href="{% url 'app1_3' %}">45,7 KB</a>
+            </div>
+
         </div>
         <div class="main-content">
             <h1>Прекрасные нейро рецепты</h1>
-            <p>Нейросеть GPT-3 крутится на сервере и генерирует рецепты, чтоб вы знали, что приготовить.</p>
             <a href="https://t.me/neural_recipes">Список рецептов</a>
         </div>
     </div>

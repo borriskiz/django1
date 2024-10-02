@@ -7,8 +7,7 @@
     <title>Welcome</title>
     <style>
         body {
-            background-image: url("{% static 'greet/background.jpg' %}");
-            background-size: cover;
+           
             text-align: center;
             color: black;
             font-family: 'Comic Sans MS', sans-serif;
@@ -32,21 +31,22 @@
             text-decoration: none;
         }
 
-        a:hover {
+            a:hover {
                 text-decoration: underline;
-        }
+            }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Добро пожаловать на мой сайт!</h1>
-        <p>Выберите страницу, которую вы хотите посетить:</p>
+       
+        <p>Выберите зверюшку:</p>
 
 
     </div>
     <div class="link-container">
-        <a href="{% url 'app1_index' %}">Список рецептов</a>
-        <a href="{% url 'app2_index' %}">Зверюшки</a>
+        <a href="{% url 'app2_1' %}">Котик</a>
+        <a href="{% url 'app2_2' %}">Песик</a>
+        <a href="{% url 'app2_3' %}">Киви</a>
     </div>
 </body>
 </html>
