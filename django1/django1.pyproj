@@ -28,6 +28,7 @@
     <Compile Include="app1\migrations\__init__.py" />
     <Compile Include="app1\models.py" />
     <Compile Include="app1\tests.py" />
+    <Compile Include="app1\urls.py" />
     <Compile Include="app1\views.py" />
     <Compile Include="app1\__init__.py" />
     <Compile Include="app2\admin.py" />
@@ -1405,6 +1406,11 @@
   <ItemGroup>
     <Folder Include="app1\" />
     <Folder Include="app1\migrations\" />
+    <Folder Include="app1\static\" />
+    <Folder Include="app1\static\app1\" />
+    <Folder Include="static\" />
+    <Folder Include="app1\templates\" />
+    <Folder Include="greet\templates\" />
     <Folder Include="app2\" />
     <Folder Include="app2\migrations\" />
     <Folder Include="app3\" />
@@ -1412,8 +1418,7 @@
     <Folder Include="django1\" />
     <Folder Include="greet\" />
     <Folder Include="greet\migrations\" />
-    <Folder Include="greet\static\" />
-    <Folder Include="greet\templates\" />
+    <Folder Include="static\greet\" />
     <Folder Include="venv\" />
     <Folder Include="venv\Include\" />
     <Folder Include="venv\Lib\" />
@@ -4237,7 +4242,13 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app1\static\app1\background.jpg" />
+    <Content Include="app1\templates\do2_app1.html" />
+    <Content Include="app1\templates\do3_app1.html" />
+    <Content Include="app1\templates\do1_app1.html" />
+    <Content Include="app1\templates\index_app1.html" />
     <Content Include="greet\templates\index.html" />
+    <Content Include="static\greet\background.jpg" />
     <Content Include="venv\Lib\site-packages\asgiref-3.8.1.dist-info\INSTALLER" />
     <Content Include="venv\Lib\site-packages\asgiref-3.8.1.dist-info\LICENSE" />
     <Content Include="venv\Lib\site-packages\asgiref-3.8.1.dist-info\METADATA" />

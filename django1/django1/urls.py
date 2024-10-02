@@ -22,4 +22,5 @@ from greet import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("greet.urls")),
+    path('app1/', include('app1.urls')),
 ]

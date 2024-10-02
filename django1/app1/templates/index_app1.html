@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App1</title>
+    <style>
+        body {
+            background-image: url("{% static 'app1/background.jpg' %}");
+            background-size: cover;
+            text-align: center;
+            color: darksalmon;
+            font-family: 'Comic Sans MS', sans-serif;
+            font-size: 20px;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            height: 100vh; 
+        }
+
+        .side-text {
+            width: 30%; 
+            background-color: #f0f0f0;
+            padding: 20px;
+            word-spacing: 20px;
+            letter-spacing: 2px;
+         
+        }
+
+        .main-content {
+            width: 70%; 
+            color: darkred;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="side-text">
+            <a href="{% url 'app1_1' %}">МАССИВНЫЙ СЕПТИ</a>
+            <p></p>
+            <a href="{% url 'app1_2' %}">МЯСО С БРУЛЯМИ</a>
+            <p></p>
+            <a href="{% url 'app1_3' %}">45,7 KB</a>
+        </div>
+        <div class="main-content">
+            <h1>Прекрасные нейро рецепты</h1>
+            <p>Нейросеть GPT-3 крутится на сервере и генерирует рецепты, чтоб вы знали, что приготовить.</p>
+            <a href="https://t.me/neural_recipes">Список рецептов</a>
+        </div>
+    </div>
+</body>
+</html>

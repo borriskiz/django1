@@ -1,7 +1,6 @@
-from django.urls import path
-from greet.views import index
-
+from . import views
+from django.urls import path, include
 
 urlpatterns = [
-    path("", index),
+    path("", views.index),
 ]
