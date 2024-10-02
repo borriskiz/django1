@@ -7,8 +7,7 @@
     <title>Welcome</title>
     <style>
         body {
-            background-image: url("{% static 'greet/background.jpg' %}");
-            background-size: cover;
+           
             text-align: center;
             color: black;
             font-family: 'Comic Sans MS', sans-serif;
@@ -32,32 +31,22 @@
             text-decoration: none;
         }
 
-        a:hover {
+            a:hover {
                 text-decoration: underline;
-        }
-        .caption {
-            margin-top: 100px;
-            font-size: 14px; 
-            color: #555;
-        }
+            }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Добро пожаловать на мой сайт!</h1>
-        <p>Выберите страницу, которую вы хотите посетить:</p>
+       
+        <p>Мои скромные поделки:</p>
 
 
     </div>
     <div class="link-container">
-        <a href="{% url 'app1_index' %}">Список рецептов</a>
-        <a href="{% url 'app2_index' %}">Зверюшки</a>
-        <a href="{% url 'app3_index' %}">Мое рукоделие</a>
-    </div>
-    <div class="caption">
-        <p>Борис Нечаев</p>
-        <p>УУНиТ</p>
-        <p>02 октября 2024</p>
+        <a href="{% url 'app3_1' %}">Ловец снов</a>
+        <a href="{% url 'app3_2' %}">Браслет</a>
+        <a href="{% url 'app3_3' %}">Очелье</a>
     </div>
 </body>
 </html>

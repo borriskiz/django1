@@ -44,6 +44,7 @@
     <Compile Include="app3\migrations\__init__.py" />
     <Compile Include="app3\models.py" />
     <Compile Include="app3\tests.py" />
+    <Compile Include="app3\urls.py" />
     <Compile Include="app3\views.py" />
     <Compile Include="app3\__init__.py" />
     <Compile Include="django1\asgi.py" />
@@ -1412,6 +1413,9 @@
     <Folder Include="app2\static\" />
     <Folder Include="app2\static\app2\" />
     <Folder Include="app2\templates\" />
+    <Folder Include="app3\static\" />
+    <Folder Include="app3\static\app3\" />
+    <Folder Include="app3\templates\" />
     <Folder Include="greet\static\" />
     <Folder Include="app1\templates\" />
     <Folder Include="greet\templates\" />
@@ -4258,6 +4262,14 @@
     <Content Include="app2\templates\do2_app2.html" />
     <Content Include="app2\templates\do3_app2.html" />
     <Content Include="app2\templates\index_app2.html" />
+    <Content Include="app3\static\app3\band.jpg" />
+    <Content Include="app3\static\app3\bracelet.jpg" />
+    <Content Include="app3\static\app3\dream.jpg" />
+    <Content Include="app3\static\app3\loom.jpg" />
+    <Content Include="app3\templates\do2_app3.html" />
+    <Content Include="app3\templates\do1_app3.html" />
+    <Content Include="app3\templates\do3_app3.html" />
+    <Content Include="app3\templates\index_app3.html" />
     <Content Include="greet\templates\index.html" />
     <Content Include="greet\static\greet\background.jpg" />
     <Content Include="venv\Lib\site-packages\asgiref-3.8.1.dist-info\INSTALLER" />
