@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            background-image: url("{% static 'greet/background.jpg' %}");
+            background-size: cover;
+            text-align: center;
+            color: black;
+            font-family: 'Comic Sans MS', sans-serif;
+            font-size: 20px;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <p>Выберите страницу, которую вы хотите посетить:</p>
+        
+    </div>
+</body>
+</html>
