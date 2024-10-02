@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+           
+            text-align: center;
+            color: black;
+            font-family: 'Comic Sans MS', sans-serif;
+            font-size: 20px;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <p>Мои скромные поделки:</p>
+
+
+    </div>
+    <div class="link-container">
+        <a href="{% url 'app3_1' %}">Ловец снов</a>
+        <a href="{% url 'app3_2' %}">Браслет</a>
+        <a href="{% url 'app3_3' %}">Очелье</a>
+    </div>
+</body>
+</html>
